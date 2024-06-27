@@ -1,5 +1,6 @@
 .nav-container{
     position: fixed;
+    width: auto;
     top: 50%;
     height: 100vh;
     padding: 0 3.5%;
