@@ -19,7 +19,7 @@ function Project() {
                     content={{
                         title: 'My Personal Website',
                         subtitle: 'My first published website, that shares my stories and experience.',
-                        url: 'https://github.com/kavicii/personal-website',
+                        url: 'https://kinchan-personal-website.vercel.app/',
                         github_url: 'https://github.com/kavicii/personal-website',
                     }}
                 />
