@@ -11,7 +11,7 @@
 }
 
 .nav-container.blur-bg{
-    background-color: rgba(176, 223, 243, 0.3);
+    background-color: rgba(1, 8, 19, 0.2);
     backdrop-filter: blur( 12px );
     -webkit-backdrop-filter: blur( 12px );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -61,10 +61,10 @@
     margin-left: 3.5%;
     border-radius: 8px;
     border: 0;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(1, 8, 19, 0.2);
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
-    color: #66A5AD;
+    color: #F1F1F2;
     transition: filter .2s ease-out;
 }
 
