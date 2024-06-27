@@ -52,6 +52,9 @@
 
 .nav-toggle{
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 36px;
     width: 36px;
     top: 18px;

@@ -68,6 +68,7 @@
     grid-template-columns: 26px 1fr;
     justify-items: center;
     align-items: center;
+    color: rgb(6, 50, 91);
     border-radius: 8px;
     gap: 8px;
     padding: 0 8px;
