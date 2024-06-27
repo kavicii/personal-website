@@ -1,0 +1,103 @@
+.nav-container{
+    position: fixed;
+    top: 50%;
+    height: 100vh;
+    padding: 0 3.5%;
+    display: flex;
+    align-items: center;
+    mix-blend-mode:luminosity;
+    transition-delay: 1s;
+    transition: transform .2s ease-out;
+}
+
+.nav-container.blur-bg{
+    background-color: rgba(176, 223, 243, 0.3);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 2;
+}
+
+.nav-container.collapsed{
+    transform: translate(-100%, -50%)
+}
+
+.nav-container.expanded{
+    transform: translate(0%, -50%);
+}
+
+.nav-line{
+    width: 1px;
+    height: 45%;
+    border-left: 1px #F1F1F2 solid;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 28px;
+    width: 100%;
+    gap: 5vh;
+}
+
+.nav-item{
+    color:#F1F1F2;
+    font-family: "Inter", sans-serif;
+    font-size: max(2.2vh,12px);
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform .2s ease-out, padding-left .2s ease-out;
+}
+
+.nav-toggle{
+    position: fixed;
+    height: 36px;
+    width: 36px;
+    top: 18px;
+    margin-left: 3.5%;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    color: #66A5AD;
+    transition: filter .2s ease-out;
+}
+
+.nav-toggle.nav-toggle-open{
+    filter: drop-shadow(1px 1px 4px #555555), opacity(1);
+}
+
+.nav-toggle.nav-toggle-hide{
+    filter: opacity(0);
+}
+
+.nav-toggle-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #F1F1F2;
+    background-color: rgba(255, 255, 255, 0);
+    height: 36px;
+    width: 36px;
+    top: 50%;
+    margin-left: 70%;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (pointer:fine){
+    .nav-item:hover{
+        transform: scale(1.2);
+        padding-left: 6%;
+    }
+}
+
+@media (pointer:coarse){
+    .nav-item:active{
+        transform: scale(1.2);
+        padding-left: 6%;
+    }
+}

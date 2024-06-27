@@ -1,0 +1,12 @@
+export const logo_js  = require('./logo_js_600.png')
+export const logo_css  = require('./logo_css_600.png')
+export const logo_html5  = require('./logo_html5_600.png');
+export const logo_python  = require('./logo_python_600.png');
+export const logo_react = require('./logo_react_600.png');
+export const logo_opencv  = require('./logo_opencv_600.png');
+export const logo_pytorch  = require('./logo_pytorch_600.png');
+export const logo_airflow  = require('./logo_airflow_600.png');
+export const logo_docker  = require('./logo_docker_600.png');
+export const logo_aws  = require('./logo_aws_600.png');
+export const logo_photoshop  = require('./logo_photoshop_600.png');
+export const logo_figma  = require('./logo_figma_600.png');

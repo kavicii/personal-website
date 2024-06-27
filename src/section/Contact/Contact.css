@@ -1,0 +1,179 @@
+#msg-toast{
+    visibility: hidden;
+    width: 180px;
+    height: 20px;
+    margin-left: -106px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+    z-index: 5;
+}
+#msg-toast.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+.contact-section{
+    height: 100vh;
+    min-height: 700px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+.contact-bg{
+    height: 110%;
+    width: 100%;
+    background: url("../../image/bg_contact_2.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+}
+.contact-banner-bg{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color: rgba(108,200,240,0.5);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    box-shadow: 0 8px 32px 0 rgba(39, 141, 173, 0.37);
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:1;
+    color: aliceblue;
+    width: 60%;
+    min-width: 278px;
+    margin-left: 0;
+    
+}
+
+.contact-content-title{
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 48px 0;
+}
+
+.contact-card-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:24px;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 50px;
+    box-shadow: 0 8px 32px 0 rgba(39, 141, 173, 0.37);
+    background-color: rgba(108,200,240,0.5);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    transition: all 0.5s ease-out;
+}
+
+.contact-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 9px 35px 0 rgba(39, 141, 173, 0.6);
+}
+
+.contact-card-logo{
+    width: 56px;
+}
+
+.contact-card-content{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-card-content:visited{
+    color: rgb(239, 239, 239);
+}
+
+@media screen and (min-width: 768px) {
+    .contact-content-title{
+        font-size: 48px;
+        margin: 0 0 36px 0;
+    }
+
+    .contact-banner-bg{
+        height:75%;
+        top: 12.5%;
+    }
+    .contact-content{
+        width: 450px;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .contact-content-title{
+        font-size: 48px;
+        margin: 0 0 36px 0;
+    }
+
+    .contact-banner-bg{
+        height:50%;
+        top: 25%;
+    }
+    .contact-content{
+        width: 60%;
+        min-width: 281px;
+        margin-left: 10%;
+    }
+    .contact-card-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4%;
+    }
+    .contact-card-content{
+        font-size: max(1.8vw,24px);
+    }
+}
+@media (pointer:fine){
+    .contact-section{
+        scroll-snap-align: start;
+    }
+}

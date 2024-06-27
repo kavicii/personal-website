@@ -1,0 +1,184 @@
+.experience-section {
+    min-height: 100vh;
+    width: 100vw;
+    color: rgb(6, 50, 91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../image/bg_experience_3.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .experience-content-container {
+        width: 100%;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-content-container h1 {
+        width: 60%;
+        min-width: 200px;
+        font-size: 24px;
+        text-align:center;
+        margin: 60px 0 30px 0;
+    }
+
+    .logo-group-container {
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgb(6, 50, 91, 0.37);
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8%;
+        row-gap: 32px;
+        padding: 32px;
+        border-radius: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .logo-container {
+        width: 30%;
+        position: relative;
+        display: inline-block;
+        filter: drop-shadow(1px 1px 2px #555555);
+    }
+
+    .logo-container .tooltip {
+        visibility: hidden;
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 4px 4px;
+        border-radius: 6px;
+        position: absolute;
+        margin-left: -5px;
+        z-index: 1;
+        top: 110%;
+        left: 0;
+        font-size: 12px;
+        transition: opacity 1s;
+    }
+
+    .logo-container .logo {
+        width: 100%;
+        transition: transform .5s;
+    }
+
+    .logo-container:hover .logo {
+        transform: scale(1.1);
+    }
+
+    .logo-container:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .logo-container .tooltip::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .experience-content-container {
+        width: 50%;
+        margin-left: 10%;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+
+    .experience-content-container h1 {
+        font-size: max(5vh, 36px);
+        margin: 60px 0 30px 0;
+    }
+
+    .logo-group-container {
+        width: 100%;
+        max-width: 1600px;
+        background-color: rgba(255, 255, 255, 0.18);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 32px 0 rgb(6, 50, 91, 0.37);
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8%;
+        row-gap: 46px;
+        padding: 30px;
+        border-radius: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .logo-container {
+        width: 17%;
+        position: relative;
+        display: inline-block;
+        filter: drop-shadow(1px 1px 2px #555555);
+    }
+
+    .logo-container .tooltip {
+        visibility: hidden;
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 4px 4px;
+        border-radius: 6px;
+        position: absolute;
+        margin-left: -5px;
+        z-index: 1;
+        top: 110%;
+        left: 0;
+        font-size: 12px;
+        transition: opacity 1s;
+    }
+
+    .logo-container .logo {
+        width: 100%;
+        transition: transform .5s;
+    }
+
+    .logo-container:hover .logo {
+        transform: scale(1.1);
+    }
+
+    .logo-container:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .logo-container .tooltip::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+
+}
+
+@media (pointer:fine) {
+    .experience-section {
+        scroll-snap-align: start;
+    }
+}

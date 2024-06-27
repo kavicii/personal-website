@@ -1,22 +1,23 @@
 import './App.css';
+import Hero from './section/Hero/Hero';
+import Nav from './component/nav';
+import About from './section/About/About';
+import Experience from './section/Experience/Experience';
+import Project from './section/Project/Project';
+import Contact from './section/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Nav>
+      <div className="App">
+        <Hero />
+        <About />
+        <Experience />
+        <Project/>
+        <Contact/>
+      </div>
+    </Nav>
+
   );
 }
 
