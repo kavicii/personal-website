@@ -1,7 +1,5 @@
 .nav-container{
     position: fixed;
-    width: auto;
-    overflow: hidden;
     top: 50%;
     height: 100vh;
     padding: 0 3.5%;
