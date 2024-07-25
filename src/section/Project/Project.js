@@ -2,10 +2,12 @@ import './Project.css';
 import { useContext } from 'react';
 import { AnchorContext } from '../../context/AnchorContext';
 import Card from './component/Card';
-import tnPW from '../../image/card_thumbnails/thumbnail_my_personal_website_1280x720.png'
-import tnITI from '../../image/card_thumbnails/thumbnail_iti_1280x720.png'
-import tnMER from '../../image/card_thumbnails/thumbnail_MER_1280x720.png'
-import tnSR from '../../image/card_thumbnails/thumbnail_SR_1280x720.png'
+import tnPW from '../../image/card_thumbnails/thumbnail_my_personal_website_640x360.jpg';
+import tnITI from '../../image/card_thumbnails/thumbnail_iti_640x360.jpg';
+import tnMER from '../../image/card_thumbnails/thumbnail_MER_640x360.jpg';
+import tnSR from '../../image/card_thumbnails/thumbnail_SR_640x360.jpg';
+import tnTDL from '../../image/card_thumbnails/thumbnail_todo_640x360.jpg';
+
 
 function Project() {
     const sectionRefs = useContext(AnchorContext);
@@ -48,6 +50,15 @@ function Project() {
                         subtitle: 'An Arduino project that aims to provide a safe shopping environment during COVID-19.',
                         url: '',
                         github_url: 'https://github.com/kavicii/Arduino-Project-Smart-Retail',
+                    }}
+                />
+                <Card
+                    thumbnail={tnTDL}
+                    content={{
+                        title: 'To-do List with Vanilla JS',
+                        subtitle: 'A simple to-do list web application built using plain JavaScript, CSS, and HTML.',
+                        url: 'https://kavicii.github.io/todo-list-web-app-plain/',
+                        github_url: 'https://github.com/kavicii/todo-list-web-app-plain',
                     }}
                 />
             </div>
